@@ -6,11 +6,17 @@
 }
 
 body {
-  width: 414px;
   font-family: "Roboto",sans-serif;
   font-size: 16px;
+  
 }
-h1 {
-  font-family: "Righteous",sans-serif;;
+h1, .section-title {
+  font-family: "Righteous",sans-serif;
 }
 
+.container {
+  width: 100%;
+  background: rgb(92, 91, 91);
+  display: flex;
+  justify-content: center;
+}
