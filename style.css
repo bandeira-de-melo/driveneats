@@ -28,7 +28,6 @@ h1, .header-title {
 
 header{
   position:fixed;
-  
   width:414px;
   background-color: #CF2B2B;
   color: #fff;
@@ -40,6 +39,7 @@ header{
   position: absolute;
   left: 0;
   top: 92px;
+  margin-bottom: 92px;
 }
 
 .title-container{
@@ -123,4 +123,30 @@ header{
 
 .selected-food, .selected-drink, .selected-dessert {
   border: 3px solid green;
+}
+
+footer {
+  position:fixed;
+  width:414px;
+  background-color: #fff;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  height: 92px;
+  padding: 15px 25px;
+  display: flex;
+}
+
+.btn {
+  width: 364px;
+  height: 61px;
+  margin: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #E5E5E5;
+  color: #fff;
+}
+
+.green {
+  background: rgb(0, 154, 36);
 }
