@@ -3,20 +3,123 @@
 
 *{
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: "Roboto",sans-serif;
+  
   font-size: 16px;
   
 }
-h1, .section-title {
+h1, .header-title, .section-title {
   font-family: "Righteous",sans-serif;
+}
+
+h1, .header-title {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  font-family: "Roboto",sans-serif;
+  font-weight: 500;
+}
+
+header{
+  position:fixed;
+  
+  width:414px;
+  background-color: #CF2B2B;
+  color: #fff;
+  z-index: 1;
+}
+
+.main-content{
+  width:inherit;
+  position: absolute;
+  left: 0;
+  top: 92px;
+}
+
+.title-container{
+  padding: 18px 21px;
 }
 
 .container {
   width: 100%;
-  background: rgb(92, 91, 91);
   display: flex;
   justify-content: center;
+}
+
+.container_content{
+  width: 414px;
+  background-color: #EEEEEE;
+  position: relative;
+}
+.main-content:not(:last-child){
+  margin-top: 16px;
+}
+
+.section-title {
+  margin-left: 19px;
+}
+
+.items-container{
+  display: flex;
+  overflow-x: scroll;
+  margin: 16px 0;
+}
+
+
+
+
+.item{
+  width: 172px;
+  height: 216px;
+  padding: 18px 14px;
+  background-color: #fff;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:not(:last-child){
+  margin-right: 16px;
+}
+
+.item:first-child{
+  margin-left: 19px;
+}
+
+.item:last-child{
+  margin-right: 19px;
+}
+
+.item img{
+  width: 144px;
+  border-radius: 4px;
+  
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+
+.item-description {
+  font-size: 15px;
+  font-weight: 300;
+  color: #A6A6A6;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.selected {
+  border: 3px solid green;
 }
