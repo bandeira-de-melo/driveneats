@@ -120,6 +120,7 @@ header{
   font-weight: 400;
 }
 
-.selected {
+
+.selected-food, .selected-drink, .selected-dessert {
   border: 3px solid green;
 }
