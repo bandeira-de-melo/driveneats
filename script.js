@@ -7,6 +7,7 @@ let drinkItem = 0
 let dessertItem = 0
 let contador = 0
 
+
 function selectFood(element, getFloatPrice) {
     const prevSelectedFoodItem = document.querySelector('.selected-food')
     if (prevSelectedFoodItem !== null) {
@@ -54,10 +55,24 @@ function total(){
     if(contador > 2){
         const button = document.querySelector(".btn")
         button.classList.add("green")
+        const foodP = foodPrice
         const drinP = drinkPrice
         const desP = dessertPrice
+        const totalPrice = foodP + drinP +  desP
+        return totalPrice
     }
 }
 
 
 
+function enviarMensagem(){
+let number = '55081985967285'
+let msg = `
+Olá, gostaria de fazer o pedido:
+- Prato: Frango Yin Yang
+- Bebida: Coquinha Gelada
+- Sobremesa: ${dessert.children(".item-title").innerHTML}
+Total: R$ 27.70
+`
+let target = `https://api.whatsapp.com/send?phone=${encodeURIComponent(number)}&text=${encodeURIComponent(msg)}`
+}

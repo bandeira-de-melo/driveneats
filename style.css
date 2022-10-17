@@ -40,6 +40,7 @@ header{
   left: 0;
   top: 92px;
   margin-bottom: 92px;
+  background-color: #EEEEEE;
 }
 
 .title-container{
@@ -50,11 +51,12 @@ header{
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #4C423C;
 }
 
 .container_content{
   width: 414px;
-  background-color: #EEEEEE;
+  background-color: #4C423C;
   position: relative;
 }
 .main-content:not(:last-child){
@@ -83,6 +85,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 5px 2px rgba(43, 43, 43, 0.35);
 }
 
 .item:not(:last-child){
